@@ -1,4 +1,4 @@
-module github.com/ayadi-mohamed/videos-microservice/
+module github.com/ayadi-mohamed/videos-microservice
 
 go 1.19
 
