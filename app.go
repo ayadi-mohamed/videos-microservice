@@ -18,16 +18,13 @@ import (
 	httproutermiddleware "github.com/slok/go-http-metrics/middleware/httprouter"
 )
 
-const (
-	metricsAddr = ":8000"
-)
+const metricsAddr = ":8000"
 const version = "1.0.0"
 var environment = os.Getenv("ENVIRONMENT")
 var redisHost = os.Getenv("REDIS_HOST")
 var redisPort = os.Getenv("REDIS_PORT")
 var password = os.Getenv("PASSWORD")
 var flaky = os.Getenv("FLAKY")
-
 var ctx = context.Background()
 var rdb redis.UniversalClient
 var Logger, _ = zap.NewProduction()
